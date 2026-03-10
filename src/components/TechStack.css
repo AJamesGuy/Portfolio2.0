@@ -1,0 +1,119 @@
+.tech-stack-section {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #00416A 0%, #001f3e 50%, #00416A 100%);
+  color: #F5F5F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-stack-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.tech-stack-container {
+  max-width: 1200px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.tech-stack-section h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+  color: #F5F5F5;
+  text-shadow: 0 4px 20px rgba(0, 65, 106, 0.3);
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.tech-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  aspect-ratio: 1;
+}
+
+.tech-card:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(245, 245, 245, 0.3);
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.tech-emoji {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.tech-card:hover .tech-emoji {
+  transform: scale(1.15);
+}
+
+.tech-name {
+  font-size: 0.85rem;
+  text-align: center;
+  color: #D0D0D0;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.tech-card:hover .tech-name {
+  color: #F5F5F5;
+}
+
+@media (max-width: 768px) {
+  .tech-stack-section h2 {
+    font-size: 2rem;
+  }
+
+  .tech-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+
+  .tech-card {
+    padding: 15px;
+  }
+
+  .tech-emoji {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tech-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+}
