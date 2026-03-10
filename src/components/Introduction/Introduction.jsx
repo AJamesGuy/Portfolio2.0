@@ -4,18 +4,17 @@ import "./Introduction.css"
 const Introduction = () => {
   const techDomains = [
     "Computer Architecture",
-    "Full-Stack Development",
+    "High-Performance Computing",
     "Cybersecurity",
-    "Cloud Computing",
-    "DevOps"
+    "Full-Stack Development"
   ]
 
   return (
     <section className="introduction-section">
       <div className="introduction-container">
         <div className="intro-header">
-          <h1 className="name">Anthony's</h1>
-          <p className="subtitle">Developer Portfolio</p>
+          <h1 className="name">Anthony J Guy</h1>
+          <p className="subtitle">Software Developer</p>
           <p className="tagline">Crafting elegant code that matters</p>
         </div>
 
