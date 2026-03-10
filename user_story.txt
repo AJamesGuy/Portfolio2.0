@@ -1,0 +1,9 @@
+User Story:
+The landing page or home page will be the main display for the 
+entirety of the website with no extra fluff. At the beginning (top) of this page you will see a minimal stylish design
+with my name centered in the middle, a brief bio of myself as a software engineer and 4 links to my 1.github, 2.linkedin, 3.email, 4.to-be-determined.
+As a box within a box, on the bottom of this box display you will see an overlay of my different tech domains in different cubes, including computer architecture, 
+Full-Stack Web Development, Cybersecurity, etc. As you scroll down, you will see my tech stack, with icons for each individual programming language and/or service.
+Beneath this, as you scroll down, you will see a projects section. This section will have cards displaying my best projects on a carousel.
+Beneath this section, as you scroll down, you will see a "Feel free to connect with me" text on the left and an input section on the right for 
+your name, business no. and email address.

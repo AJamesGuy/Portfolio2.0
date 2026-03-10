@@ -1,0 +1,21 @@
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  height: 100vh;
+}
+
+.inner-box-1 {
+  width: 50%;
+  height: 80%;
+  border: 1px solid red;
+}
+
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
