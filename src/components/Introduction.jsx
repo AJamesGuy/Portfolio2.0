@@ -33,7 +33,7 @@ const Introduction = () => {
           <h1 className="name">Anthony J. Guy</h1>
           <p className="subtitle">Software Engineer</p>
           <TypeText 
-            text="Turning bytes into behavior." 
+            text="Full-Stack Development & Systems Programming" 
             speed={50}
             className="tagline"
             cursor={false}
