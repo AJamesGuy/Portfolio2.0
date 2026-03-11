@@ -1,5 +1,7 @@
 import React from 'react'
 import "./Introduction.css"
+import { DottedGlowBackground } from "../ui/dotted-glow-background"
+import { TypeText } from "../ui/TypeText"
 import LinkedIn from "../../assets/linkedin-sign.png"
 import GitHub from "../../assets/github-sign.png"
 import Email from "../../assets/mail.png"
@@ -16,10 +18,26 @@ const Introduction = () => {
   return (
     <section className="introduction-section">
       <div className="introduction-container">
+        <DottedGlowBackground 
+          gap={12}
+          radius={2}
+          color="rgba(255, 255, 255, 0.3)"
+          glowColor="rgba(0, 170, 255, 0.6)"
+          opacity={0.5}
+          speedMin={0.4}
+          speedMax={1.3}
+          speedScale={1}
+        />
+        
         <div className="intro-header">
-          <h1 className="name">Anthony J Guy</h1>
+          <h1 className="name">Anthony J. Guy</h1>
           <p className="subtitle">Software Engineer</p>
-          <p className="tagline">Turning bytes into behavior.</p>
+          <TypeText 
+            text="Turning bytes into behavior." 
+            speed={50}
+            className="tagline"
+            cursor={false}
+          />
         </div>
 
         <div className="social-links">

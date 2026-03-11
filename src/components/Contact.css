@@ -1,7 +1,6 @@
 .contact-section {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(135deg, #00416A 0%, #001f3e 50%, #00416A 100%);
   color: #F5F5F5;
   display: flex;
   align-items: center;
@@ -9,19 +8,6 @@
   padding: 80px 20px;
   position: relative;
   overflow: hidden;
-}
-
-.contact-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: 
-    radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
-    radial-gradient(circle at 80% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
-  pointer-events: none;
 }
 
 .contact-container {
