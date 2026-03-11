@@ -1,11 +1,11 @@
 import React from 'react'
 import "./Introduction.css"
-import { DottedGlowBackground } from "../ui/dotted-glow-background"
-import { TypeText } from "../ui/TypeText"
-import LinkedIn from "../../assets/linkedin-sign.png"
-import GitHub from "../../assets/github-sign.png"
-import Email from "../../assets/mail.png"
-import Link from "../../assets/link.png"
+import { DottedGlowBackground } from "./ui/dotted-glow-background"
+import { TypeText } from "./ui/TypeText"
+import LinkedIn from "../assets/linkedin-sign.png"
+import GitHub from "../assets/github-sign.png"
+import Email from "../assets/mail.png"
+import Link from "../assets/link.png"
 
 const Introduction = () => {
   const techDomains = [

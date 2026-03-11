@@ -1,1 +1,22 @@
 /* Portfolio styles - starfield background managed by StarfieldBackground component */
+.cv-button {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  color: #F5F5F5;
+  border: 2px solid rgba(245, 245, 245, 0.3);
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+}
+
+.cv-button:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(245, 245, 245, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
