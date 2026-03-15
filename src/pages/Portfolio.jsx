@@ -12,7 +12,7 @@ import { Radius } from 'lucide-react'
 const Portfolio = () => {
   return (
     <StarfieldBackground count={400} speed={0.5} starColor="#ffffff" twinkle={true}>
-      <Button><img src={Code} alt="Code" style={{ width: '100px', height: '100px', backgroundColor: 'white', position: 'fixed', top: '10px', left: '10px', borderRadius: '50%' }} /></Button>
+      <Button className='code-button' ><img src={Code} alt="Code" /></Button>
       <Button className="cv-button">Download CV</Button>
       <Introduction />
       <TechStack />

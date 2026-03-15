@@ -10,9 +10,8 @@ import Link from "../assets/link.png"
 const Introduction = () => {
   const techDomains = [
     "Computer Architecture",
-    "High-Performance Computing",
     "Cybersecurity",
-    "Full-Stack Development"
+    "Full-Stack Apps"
   ]
 
   return (
@@ -33,7 +32,7 @@ const Introduction = () => {
           <h1 className="name">Anthony J. Guy</h1>
           <p className="subtitle">Software Engineer</p>
           <TypeText 
-            text="Full-Stack Development & Systems Programming" 
+            text="From assembly to APIs." 
             speed={50}
             className="tagline"
             cursor={false}
@@ -63,7 +62,7 @@ const Introduction = () => {
           </a>
         </div>
 
-        <p className="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic pariatur nemo soluta quos accusamus. Officia dolorem sapiente nostrum expedita pariatur odit laborum vel.</p>
+        <p className="bio">Full-stack developer passionate about building scalable applications and exploring the deeper layers of software. I enjoy working across the stack—from frontend interfaces to backend systems—while studying performance, security, and low-level programming concepts.</p>
 
         <div className="tech-domains">
           {techDomains.map((domain, index) => (
