@@ -40,22 +40,22 @@ const Introduction = () => {
         </div>
 
         <div className="social-links">
-          <a href="#github" className="social-icon" title="GitHub">
+          <a href="https://github.com/AJamesGuy" className="social-icon" title="GitHub" target="_blank" rel="noopener noreferrer">
             <i className="icon">
               <img src={GitHub} alt="GitHub" style={{ width: '20px', height: '20px' }} />
             </i>
           </a>
-          <a href="#linkedin" className="social-icon" title="LinkedIn">
+          <a href="https://www.linkedin.com/in/anthonyjguy/" className="social-icon" title="LinkedIn" target="_blank" rel="noopener noreferrer">
             <i className="icon">
               <img src={LinkedIn} alt="LinkedIn" style={{ width: '20px', height: '20px' }} />
             </i>
           </a>
-          <a href="#email" className="social-icon" title="Email">
+          <a href="mailto:anthonyjguy@protonmail.com" className="social-icon" title="Email" target="_blank" rel="noopener noreferrer">
             <i className="icon">
               <img src={Email} alt="Email" style={{ width: '20px', height: '20px' }} />
             </i>
           </a>
-          <a href="#other" className="social-icon" title="Other">
+          <a href="https://x.com/AnthonyJGuy" className="social-icon" title="Other" target="_blank" rel="noopener noreferrer">
             <i className="icon">
               <img src={Link} alt="Other" style={{ width: '20px', height: '20px' }} />
             </i>
