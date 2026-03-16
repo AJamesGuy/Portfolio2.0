@@ -1,37 +1,53 @@
 .tech-stack-section {
   width: 100%;
-  min-height: 110vh;
-  color: #F5F5F5;
+  min-height: 100vh;
+  color: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 80px 20px;
+  padding: 100px 20px;
   position: relative;
   overflow: hidden;
-  text-transform: uppercase;
-  /* background: linear-gradient(135deg, #0a192f88 0%, #12192b1e 100%); */
 }
 
 .tech-stack-container {
-  max-width: 1200px;
+  max-width: 1400px;
   width: 100%;
   position: relative;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
 }
 
 .tech-stack-section h2 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 3.2rem;
   font-weight: 700;
-  margin-bottom: 60px;
-  color: #F5F5F5;
+  margin-bottom: 70px;
+  margin-top: 0;
+  color: #FFFFFF;
+  letter-spacing: -0.5px;
+  background: linear-gradient(135deg, #FFFFFF 0%, #E0E7FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  width: 100%;
 }
 
 .tech-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-  gap: 20px;
-  padding: 0 20px;
+  grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+  gap: 28px;
+  padding: 50px 40px;
+  width: 100%;
+  background: rgba(6, 182, 212, 0.04);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(6, 182, 212, 0.15);
+  border-radius: 24px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  justify-items: center;
 }
 
 .tech-card {
@@ -39,68 +55,128 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 25px;
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 16px;
-  transition: all 0.3s ease;
+  padding: 32px 24px;
+  background: rgba(6, 182, 212, 0.06);
+  backdrop-filter: blur(30px);
+  border: 1.5px solid rgba(6, 182, 212, 0.25);
+  border-radius: 18px;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
   cursor: pointer;
   aspect-ratio: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 30%, rgba(6, 182, 212, 0.15) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.tech-card:hover::before {
+  opacity: 1;
 }
 
 .tech-card:hover {
-  background: rgba(255, 255, 255, 0.15);
-  border-color: rgba(245, 245, 245, 0.3);
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  background: rgba(6, 182, 212, 0.15);
+  border-color: #06B6D4;
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 25px 50px rgba(6, 182, 212, 0.25);
 }
 
 .tech-emoji {
-  font-size: 3rem;
-  margin-bottom: 10px;
+  font-size: 3.2rem;
+  margin-bottom: 12px;
   display: inline-block;
-  transition: transform 0.3s ease;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  filter: drop-shadow(0 0 10px rgba(6, 182, 212, 0.2));
 }
 
 .tech-card:hover .tech-emoji {
-  transform: scale(1.15);
+  transform: scale(1.2) rotateZ(8deg);
 }
 
 .tech-name {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   text-align: center;
-  color: #D0D0D0;
-  font-weight: 500;
+  color: #D4D9FF;
+  font-weight: 600;
+  letter-spacing: 0.3px;
   transition: color 0.3s ease;
 }
 
 .tech-card:hover .tech-name {
-  color: #F5F5F5;
+  color: #FFFFFF;
+}
+
+@media (max-width: 1024px) {
+  .tech-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 24px;
+    padding: 40px 30px;
+  }
 }
 
 @media (max-width: 768px) {
+  .tech-stack-section {
+    padding: 80px 20px;
+    min-height: auto;
+  }
+
   .tech-stack-section h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    margin-bottom: 50px;
   }
 
   .tech-grid {
     grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
+    gap: 18px;
+    padding: 35px 25px;
   }
 
   .tech-card {
-    padding: 15px;
+    padding: 24px 16px;
+  }
+
+  .tech-emoji {
+    font-size: 2.5rem;
+    margin-bottom: 8px;
+  }
+
+  .tech-name {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tech-stack-section {
+    padding: 60px 15px;
+  }
+
+  .tech-stack-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+  }
+
+  .tech-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    padding: 25px 15px;
+  }
+
+  .tech-card {
+    padding: 20px 12px;
   }
 
   .tech-emoji {
     font-size: 2rem;
   }
-}
 
-@media (max-width: 480px) {
-  .tech-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+  .tech-card:hover {
+    transform: translateY(-8px) scale(1.02);
   }
 }
