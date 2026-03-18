@@ -1,0 +1,130 @@
+.mobile-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: rgba(6, 182, 212, 0.08);
+  backdrop-filter: blur(20px);
+  border-bottom: 1.5px solid rgba(6, 182, 212, 0.25);
+  z-index: 1000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Show navbar only on smaller screens */
+@media (max-width: 768px) {
+  .mobile-navbar {
+    display: flex;
+  }
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.navbar-code-btn {
+  width: 60px;
+  height: 60px;
+  background: rgba(6, 182, 212, 0.12);
+  border: 2px solid rgba(6, 182, 212, 0.4);
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  cursor: pointer;
+}
+
+.navbar-code-btn:hover {
+  background: rgba(6, 182, 212, 0.25);
+  border-color: #06B6D4;
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(6, 182, 212, 0.3);
+}
+
+.navbar-code-btn img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.navbar-cv-btn {
+  padding: 12px 28px;
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.2) 0%, rgba(6, 182, 212, 0.1) 100%);
+  backdrop-filter: blur(20px);
+  color: #FFFFFF;
+  border: 2px solid #06B6D4;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.navbar-cv-btn:hover {
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.35) 0%, rgba(6, 182, 212, 0.2) 100%);
+  border-color: #06B6D4;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(6, 182, 212, 0.3);
+}
+
+.navbar-cv-btn a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Hide desktop buttons when navbar is shown */
+@media (max-width: 768px) {
+  .code-button,
+  .cv-button {
+    display: none;
+  }
+}
+
+/* Add padding to body on mobile to account for navbar */
+@media (max-width: 768px) {
+  body {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mobile-navbar {
+    height: 70px;
+    padding: 0 15px;
+  }
+
+  .navbar-content {
+    gap: 12px;
+  }
+
+  .navbar-code-btn {
+    width: 52px;
+    height: 52px;
+  }
+
+  .navbar-code-btn img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .navbar-cv-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}

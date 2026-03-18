@@ -28,8 +28,8 @@ const Contact = () => {
       <div className="contact-container">
         <div className="contact-content">
           <div className="contact-text">
-            <h2>Feel free to fill up your details,<br />I will reach out to you asap</h2>
-            <p>Let's connect and explore opportunities together. I'm always excited to collaborate on interesting projects and meet new people in the tech community.</p>
+            <h2>Interested in collaborating?<br /> Fill in your details!<br />I will reach out to you ASAP.</h2>
+            <p>I'm always on the lookout for interesting projects and collaborations on research and development.</p>
           </div>
 
           <form className="contact-form" onSubmit={handleSubmit}>

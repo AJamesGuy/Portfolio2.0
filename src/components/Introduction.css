@@ -12,6 +12,7 @@
   padding: 60px 20px;
   position: relative;
   overflow: hidden;
+  margin-top: 50px;
 }
 
 .introduction-section::before {

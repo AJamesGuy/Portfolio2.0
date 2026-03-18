@@ -1,35 +1,73 @@
 /* Portfolio styles - starfield background managed by StarfieldBackground component */
+
+/* Desktop buttons - hidden on mobile */
 .cv-button {
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  color: #F5F5F5;
-  border: 2px solid rgba(245, 245, 245, 0.3);
-  border-radius: 8px;
-  font-weight: 600;
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.2) 0%, rgba(6, 182, 212, 0.1) 100%);
+  backdrop-filter: blur(20px);
+  color: #FFFFFF;
+  border: 2px solid #06B6D4;
+  border-radius: 12px;
+  font-weight: 700;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
   font-size: 1rem;
   position: fixed;
   top: 1rem;
   right: 1rem;
-  z-index: 1000;
+  z-index: 500;
   margin: 10px;
+  padding: 14px 32px;
+  letter-spacing: 0.5px;
 }
 
 .cv-button:hover {
-  background: rgba(255, 255, 255, 0.25);
-  border-color: rgba(245, 245, 245, 0.5);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.35) 0%, rgba(6, 182, 212, 0.2) 100%);
+  border-color: #06B6D4;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(6, 182, 212, 0.3);
+}
+
+.cv-button a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .code-button {
-  width: 100px;
-  height: 100px;
-  background-color: white;
+  width: 70px;
+  height: 70px;
+  background: rgba(6, 182, 212, 0.12);
+  border: 2px solid rgba(6, 182, 212, 0.4);
   position: fixed;
-  top: 10px;
-  left: 10px;
+  top: 20px;
+  left: 20px;
   border-radius: 50%;
-  margin: 10px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  z-index: 500;
+  cursor: pointer;
+}
+
+.code-button:hover {
+  background: rgba(6, 182, 212, 0.25);
+  border-color: #06B6D4;
+  transform: scale(1.1);
+  box-shadow: 0 12px 30px rgba(6, 182, 212, 0.3);
+}
+
+.code-button img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+/* Hide desktop buttons on tablet and mobile */
+@media (max-width: 768px) {
+  .code-button,
+  .cv-button {
+    display: none;
+  }
 }
