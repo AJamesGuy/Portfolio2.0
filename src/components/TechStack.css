@@ -130,6 +130,11 @@
   .tech-stack-section h2 {
     font-size: 2.2rem;
     margin-bottom: 50px;
+    color: #FFFFFF;
+    background: linear-gradient(135deg, #FFFFFF 0%, #E0E7FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 
   .tech-grid {
@@ -160,6 +165,11 @@
   .tech-stack-section h2 {
     font-size: 1.8rem;
     margin-bottom: 40px;
+    color: #FFFFFF;
+    background: linear-gradient(135deg, #FFFFFF 0%, #E0E7FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 
   .tech-grid {
